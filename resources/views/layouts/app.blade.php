@@ -8,9 +8,6 @@
         <title>{{ env('APP_NAME') }}</title>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
         <!-- Styles -->
         <style>
             html, body {
@@ -65,6 +62,7 @@
             }
         </style>
 
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -74,6 +72,6 @@
                 </div>
             </div>
         </div>
-        <script src="{{ mix('css/app.css') }}"></script>
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>

@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/zoek-een-leven', function() {
-    return view('leven');
-});
+Route::get('/zoek-een-leven', [
+    'uses' => 'LinksController@searchLife'
+]);
