@@ -13,8 +13,11 @@
         <!-- Styles -->
         <style>
             html, body {
+                background-image:url('https://gitlab.com/thedevray/backgrounds/raw/master/L3mhxbS.jpg');
+                background-size: 100%;
+                background-repeat:no-repeat;
                 background-color: #fff;
-                color: #636b6f;
+                color: #fff;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
