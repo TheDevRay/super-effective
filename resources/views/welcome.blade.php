@@ -14,7 +14,7 @@
         <style>
             html, body {
                 background-image:url('/images/background.jpg');
-                background-size: 100%;
+                background-size: cover;
                 background-repeat:no-repeat;
                 background-color: #fff;
                 color: #fff;
@@ -72,7 +72,7 @@
             }
         </style>
     </head>
-    <body>
+    <body class="background">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
